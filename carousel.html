@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="carousel.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <style>
+        *{
+    padding: 0;
+    margin: 10px;
+}
+
+.cell{
+    width:30%;
+    height: 400px;
+    margin: 0 20px;
+    border-radius: 10px 10px;
+    outline: 10px;
+    background: black
+
+}
+
+.cell img{
+    width: 95%;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px 10px;
+    border-radius: 10px 10px;
+    outline: 10px ;
+}
+
+.cell h1{
+    font-size: 30px;
+    font-weight: 200;
+    font-family: sans-serif,'Poppins';
+    color: white;
+}
+
+.cell p{
+     font-size: 15px;
+     color:gray;
+}
+
+   </style>
+
+</head>
+<body>
+    
+    <div class="main-carousel">
+        <div class="cell">
+            <img src="image.jpeg">
+            <h1>Heading1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, temporibus qui dolor perspiciatis in laboriosam architecto sint minus corrupti consequatur optio libero adipisci magnam molestiae illo et praesentium! Accusantium, similique.</p>
+        </div>
+        <div class="cell">
+            <img src="image2.jpeg">
+            <h1>Heading1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, temporibus qui dolor perspiciatis in laboriosam architecto sint minus corrupti consequatur optio libero adipisci magnam molestiae illo et praesentium! Accusantium, similique.</p>
+        </div>
+        <div class="cell">
+            <img src="image3.jpeg"> <h1>Heading1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, temporibus qui dolor perspiciatis in laboriosam architecto sint minus corrupti consequatur optio libero adipisci magnam molestiae illo et praesentium! Accusantium, similique.</p>
+        </div>
+        <div class="cell">
+            <img src="image4.jpeg">
+            <h1>Heading1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, temporibus qui dolor perspiciatis in laboriosam architecto sint minus corrupti consequatur optio libero adipisci magnam molestiae illo et praesentium! Accusantium, similique.</p>
+        </div>
+        <div class="cell">
+            <img src="image.jpeg">
+            <h1>Heading1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, temporibus qui dolor perspiciatis in laboriosam architecto sint minus corrupti consequatur optio libero adipisci magnam molestiae illo et praesentium! Accusantium, similique.</p>
+        </div>
+        <div class="cell">
+            <img src="image2.jpeg">
+            <h1>Heading1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, temporibus qui dolor perspiciatis in laboriosam architecto sint minus corrupti consequatur optio libero adipisci magnam molestiae illo et praesentium! Accusantium, similique.</p>
+        </div>
+        <div class="cell">
+            <img src="image3.jpeg">
+            <h1>Heading1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, temporibus qui dolor perspiciatis in laboriosam architecto sint minus corrupti consequatur optio libero adipisci magnam molestiae illo et praesentium! Accusantium, similique.</p>
+        </div>
+        <div class="cell">
+            <img src="image4.jpeg">
+            <h1>Heading1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, temporibus qui dolor perspiciatis in laboriosam architecto sint minus corrupti consequatur optio libero adipisci magnam molestiae illo et praesentium! Accusantium, similique.</p>
+        </div>
+      </div>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+    <script type="text/javascript">
+       $('.main-carousel').flickity({
+      // options
+      cellAlign: 'left',
+      wrapAround: true,
+      freeScroll: true
+      
+});
+    </script>
+</body>
+</html>
